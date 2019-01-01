@@ -6,6 +6,7 @@
     <Copyright>2018</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/Bryan-Bennett/DungeonMaster/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Bryan-Bennett/DungeonMaster</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Bryan-Bennett/DungeonMaster/master/fav.ico</PackageIconUrl>
     <RepositoryUrl>https://github.com/Bryan-Bennett/DungeonMaster.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
