@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <Version>0.1.0-alpha</Version>
+    <Authors>Bryan Bennett</Authors>
+    <Product>Dungeon Master Discord Bot</Product>
+    <Copyright>2018</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/Bryan-Bennett/DungeonMaster/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Bryan-Bennett/DungeonMaster</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Bryan-Bennett/DungeonMaster.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Description>Dungeon Master is a bot application for Discord servers that provides a text-based RPG environment.</Description>
+    <ApplicationIcon>fav.ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>

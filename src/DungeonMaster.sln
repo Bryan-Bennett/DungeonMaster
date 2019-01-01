@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{C1404F28-2D73-4535-A218-C266CFBA21CB}"
+	ProjectSection(SolutionItems) = preProject
+		directory.build.props = directory.build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonMaster.Client", "DungeonMaster.Client\DungeonMaster.Client.csproj", "{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5B0C3030-EC97-41D0-BA95-7F4B4EA4A66F}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7D7DF0A-8419-4925-B052-158F2585127E}
+	EndGlobalSection
+EndGlobal
