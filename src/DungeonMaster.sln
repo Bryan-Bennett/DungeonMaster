@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5B0C
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonMaster.Logging", "DungeonMaster.Logging\DungeonMaster.Logging.csproj", "{1A5BA7A7-A9FB-4C3D-84B4-7EEC20A35417}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B66C3F0-C93D-40FA-A56B-9E96DFA4D5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5BA7A7-A9FB-4C3D-84B4-7EEC20A35417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5BA7A7-A9FB-4C3D-84B4-7EEC20A35417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5BA7A7-A9FB-4C3D-84B4-7EEC20A35417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5BA7A7-A9FB-4C3D-84B4-7EEC20A35417}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

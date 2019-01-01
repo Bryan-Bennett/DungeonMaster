@@ -5,6 +5,19 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <Description>Dungeon Master is a bot application for Discord servers that provides a text-based RPG environment.</Description>
     <ApplicationIcon>fav.ico</ApplicationIcon>
+    <RootNamespace>DungeonMaster</RootNamespace>
+    <AssemblyName>dmbot</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Unity" Version="5.8.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DungeonMaster.Logging\DungeonMaster.Logging.csproj" />
+  </ItemGroup>
 
 </Project>
