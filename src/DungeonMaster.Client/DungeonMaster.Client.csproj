@@ -9,6 +9,10 @@
     <AssemblyName>dmbot</AssemblyName>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Discord.Net" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
@@ -18,6 +22,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DungeonMaster.Logging\DungeonMaster.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="token.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

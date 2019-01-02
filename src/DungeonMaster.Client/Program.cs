@@ -1,6 +1,11 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Discord.Commands;
+using Discord.WebSocket;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Threading.Tasks;
 using Unity;
 
 namespace DungeonMaster
@@ -11,11 +16,13 @@ namespace DungeonMaster
 
         private UnityContainer Container { get; } = new UnityContainer();
 
+        private ILogger<Program> Log { get; set; }
+
         private Program()
         {
         }
 
-        public void Run()
+        public async Task RunAsync()
         {
             if (Running)
             {
@@ -23,7 +30,8 @@ namespace DungeonMaster
             }
             Running = true;
             Configure(Container);
-            //TODO
+            var bot = Container.Resolve<DungeonMasterBot>();
+            await bot.RunAsync();
         }
 
         public void Dispose()
@@ -31,28 +39,14 @@ namespace DungeonMaster
             Container.Dispose();
         }
 
-        private void Configure(IUnityContainer container)
+        #region Main
+        static void Main(string[] args)
         {
-            var loggers = container.AddLogging();
-            loggers.AddLogFile(x =>
+            using (var program = new Program())
             {
-                x.FilePath = @"logs\log.txt";
-#if DEBUG
-                x.MinimumLogLevel = LogLevel.Debug;
-#endif
-            });
-
-            AddFlightRecord(loggers);
+                program.RunAsync().GetAwaiter().GetResult();
+            }
         }
-
-        [Conditional("DEBUG")]
-        private void AddFlightRecord(ILoggerFactory loggers)
-        {
-            loggers.AddLogFile(x =>
-             {
-                 x.FilePath = @"logs\flightrecord.txt";
-                 x.IsFlightRecord = true;
-             });
-        }
+        #endregion
     }
 }

@@ -61,7 +61,6 @@ namespace DungeonMaster
 
         public void Log<TState>(string category, LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
-
             if (string.IsNullOrWhiteSpace(category))
             {
                 throw new InvalidOperationException("Categories for log file entries cannot be null or contain only whitespace characters.");
