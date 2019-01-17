@@ -2,6 +2,9 @@
 
 namespace System.Reflection
 {
+    /// <summary>
+    /// The AssemblyExtensions class exposes convenient methods for manipulating <see cref="Assembly"/> objects.
+    /// </summary>
     public static class AssemblyExtensions
     {
         public static string GetAssemblyPath(this Assembly assembly)
